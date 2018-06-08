@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <title>EasyZoom, jQuery image zoom plugin</title>
+    <link rel="stylesheet" href="css/example.css" />
+    <link rel="stylesheet" href="css/easyzoom.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <section id="example">
+            <!-- Placeholder for demo purposes only -->
+            <!-- <div style="float: right; width: 310px; height: 400px; background: #EEE;"></div> -->
+            <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#mob1" id="home-tab" role="tab" data-toggle="tab">
+                                    <img src="https://rukminim1.flixcart.com/image/128/128/jdhp47k0/mobile/e/h/e/redmi-note-5-pro-na-original-imaf2ashnnbxxks5.jpeg?q=70" alt="">
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#mob2" role="tab" id="profile-tab" data-toggle="tab">
+                                    <img src="https://rukminim1.flixcart.com/image/128/128/jdhp47k0/mobile/e/h/e/redmi-note-5-pro-na-original-imaf2ashuwmatzkp.jpeg?q=70" alt="">
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#mob3" role="tab" id="profile-tab" data-toggle="tab">
+                                    <img src="https://rukminim1.flixcart.com/image/128/128/jddesnk0/mobile/e/h/e/redmi-e7s-note-5-pro-na-original-imaf2ashru3ufz8j.jpeg?q=70" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content" id="myTabContent">
+                            <!-- <div class="tab-pane fade" role="tabpanel" id="home" aria-labelledby="home-tab">
+                                        <div class="easyzoom easyzoom--adjacent">
+                                            <a href="images/2_zoom.jpg">
+                                                <img src="images/2_standard.jpg" alt="" width="310" height="400" />
+                                            </a>
+                                        </div>
+                                    </div> -->
+                            <div class="tab-pane fade active in" role="tabpanel" id="mob1" aria-labelledby="home-tab">
+                                <div class="easyzoom easyzoom--adjacent">
+                                    <a href="https://rukminim1.flixcart.com/image/832/832/jdhp47k0/mobile/e/h/e/redmi-note-5-pro-na-original-imaf2ashnnbxxks5.jpeg?q=70">
+                                        <img src="https://rukminim1.flixcart.com/image/832/832/jdhp47k0/mobile/e/h/e/redmi-note-5-pro-na-original-imaf2ashnnbxxks5.jpeg?q=70" alt="" height="500" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="mob2" aria-labelledby="profile-tab">
+                                <div class="easyzoom easyzoom--adjacent">
+                                    <a href="https://rukminim1.flixcart.com/image/832/832/jdhp47k0/mobile/e/h/e/redmi-note-5-pro-na-original-imaf2ashuwmatzkp.jpeg?q=70">
+                                        <img src="https://rukminim1.flixcart.com/image/832/832/jdhp47k0/mobile/e/h/e/redmi-note-5-pro-na-original-imaf2ashuwmatzkp.jpeg?q=70" alt="" height="500" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="mob3">
+                                <div class="easyzoom easyzoom--adjacent">
+                                    <a href="https://rukminim1.flixcart.com/image/832/832/jddesnk0/mobile/e/h/e/redmi-e7s-note-5-pro-na-original-imaf2ashru3ufz8j.jpeg?q=70">
+                                        <img src="https://rukminim1.flixcart.com/image/832/832/jddesnk0/mobile/e/h/e/redmi-e7s-note-5-pro-na-original-imaf2ashru3ufz8j.jpeg?q=70" alt="" height="500" />
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/easyzoom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // Instantiate EasyZoom instances
+        var $easyzoom = $('.easyzoom').easyZoom();
+    </script>
+</body>
+
+</html>
